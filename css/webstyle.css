@@ -1,6 +1,8 @@
 body{
     background-color: #EEEEEE;
+    width: 90%;
     max-width: 1000px;
+    min-width: 900px;
     margin-right: auto;
     margin-left: auto;
     font-family: Verdana;
@@ -10,6 +12,7 @@ body{
 nav{
     background-color: #333;
     height: 80px;
+    min-width: 900px;
 }
 
 
