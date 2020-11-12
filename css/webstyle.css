@@ -6,12 +6,14 @@ body{
     margin-right: auto;
     margin-left: auto;
     font-family: Verdana;
+    font-size: 125%;
 }
 
 nav{
     background-color: #333;
     height: 80px;
     min-width: 950px;
+    font-size: 120%;
 }
 
 
@@ -82,7 +84,6 @@ article h4{
     margin-bottom: 0px;
 }
 
-
 article ul{
     clear: both;
     margin-bottom: 50px;
@@ -92,6 +93,7 @@ article p{
     float: left;
     width: 70%;
     margin-bottom: 40px;
+    line-height: 1.25;
 }
 
 .no-aside p{
@@ -151,9 +153,11 @@ tr{
     text-align: right;
 }
 
-.mountain-name td{
+td.mountain-name{
     text-align: left;
 }
+
+
 
 tr.even{
     background-color: lightgray;
