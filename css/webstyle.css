@@ -1,6 +1,6 @@
 body{
     background-color: #EEEEEE;
-    width: 90%;
+    width: 95%;
     max-width: 1000px;
     min-width: 900px;
     margin-right: auto;
@@ -9,20 +9,25 @@ body{
 
 }
 
+
+
 nav{
     background-color: #333;
     height: 80px;
-    min-width: 900px;
+    min-width: 950px;
 }
 
 
 nav li{
     display: inline;
-    margin-left: 45px;
-    padding: 10px;
+    padding: 20px;
     line-height: 80px;
+}
 
-
+nav ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 nav a{
@@ -131,4 +136,18 @@ tr.even{
 
 tr:hover{
     background-color: #c3e6e5;
+}
+
+aside h4{
+    margin-left: 40px;
+}
+
+aside ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+asside a{
+    text-decoration: none;
+    list-style: none;
 }
