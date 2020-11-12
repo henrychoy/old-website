@@ -6,10 +6,7 @@ body{
     margin-right: auto;
     margin-left: auto;
     font-family: Verdana;
-
 }
-
-
 
 nav{
     background-color: #333;
@@ -56,9 +53,17 @@ figure figcaption{
     font-size: 12px;
 }
 
-img{
+header img{
     width:450px;
     height: 337px;
+}
+
+.logo{
+    border: 1px solid black;
+    display: inline;
+    float: left;
+    margin-right: 250px;
+    margin-bottom: 20px;
 }
 
 footer p{
@@ -86,17 +91,34 @@ article ul{
 article p{
     float: left;
     width: 70%;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
-.no-asside p{
+.no-aside p{
     width: 100%;
 }
 
-aside{
+aside {
     display: inline-block;
-    float: right;
+
     width: 30%;
+    text-decoration: none;
+}
+
+aside h4{
+    margin-left: 40px;
+}
+
+aside ul{
+    list-style: none;
+}
+
+aside a{
+    text-decoration: none;
+}
+
+aside li{
+    padding-bottom: 20px;
 }
 
 hr{
@@ -105,6 +127,9 @@ hr{
 
 table {
     clear: both;
+    float: left;
+    width: 70%;
+
 }
 
 .hidden{
@@ -138,16 +163,3 @@ tr:hover{
     background-color: #c3e6e5;
 }
 
-aside h4{
-    margin-left: 40px;
-}
-
-aside ul{
-    text-decoration: none;
-    list-style: none;
-}
-
-asside a{
-    text-decoration: none;
-    list-style: none;
-}
