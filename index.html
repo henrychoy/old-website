@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Henry's Personal Webpage!</title>
-    <link rel="stylesheet" type="text/css" href="css/webstyle.css">
-    <link rel="stylesheet" type="text/css" href="css/printstyle.css">
+    <link rel="stylesheet" type="text/css" href="css/webstyle.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/printstyle.css" media="print">
 </head>
 <body>
 
@@ -31,30 +31,33 @@
     <hr>
 </header>
 
-<article class="no-aside">
-    <h3>Introduction</h3>
-    <p>Hello!  My name is Henry Choy and this is the first webpage that I've built from scratch.  As I progress through CS601, I'm hoping that
-        I will be able to add more content and make things look nicer, so please check back often!  The main goal of this site is to give you an
-        introduction to my academic and professional background, as well as my hobbies outside of work and school.  You can find all of these
-        sections in the navigation bar at the top of each page.
-    </p>
-    <ul class="hidden">
-        <li>CS300 - Introduction to Software Development</li>
-        <li>CS521 - Information Structures with Python</li>
-        <li>CS682 - Information Systems Analysis and Design</li>
-        <li>CS526 - Data Structures and Algorithms</li>
-        
-    </ul>
-
-</article>
+<section>
+    <h2>Welcome to my webpage!</h2>
+    <article class="no-aside">
+        <h3>Introduction</h3>
+        <p>Hello!  My name is Henry Choy and this is the first webpage that I've built from scratch.  As I progress through CS601, I'm hoping that
+            I will be able to add more content and make things look nicer, so please check back often!  The main goal of this site is to give you an
+            introduction to my academic and professional background, as well as my hobbies outside of work and school.  You can find all of these
+            sections in the navigation bar at the top of each page.
+        </p>
+    </article>
+</section>
 
 
+<ul class="hidden">
+    <li>HOW CAN I REMOVE THIS LIST???</li>
+    <li>HOW CAN I REMOVE THIS LIST???</li>
+    <li>HOW CAN I REMOVE THIS LIST???</li>
+</ul>
 
 
-<!-- This HTML5 footer element will contain my name and email link -->
+
+<!-- This HTML5 footer element will contain my name, email, and last updated date, as well as printed from line -->
 <footer>
-    <p>&copy; 2020 Henry Choy</p>
-    <p><a href="mailto:henrychoy@gmail.com">henrychoy@gmail.com</a></p>
+    <div id="footer-left"><p>&copy; 2020 Henry Choy</p></div>
+    <div id="footer-center"><p><a href="mailto:henrychoy@gmail.com">henrychoy@gmail.com</a></p></div>
+    <div id="footer-right"><p>Last updated: 11/13/2020</p></div>
+    <p class="printed-from">Printed from http://henrychoy.com/</p>
 </footer>
 
 </body>

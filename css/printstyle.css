@@ -1,0 +1,75 @@
+
+body{
+    font-family: "Times New Roman";
+}
+
+p{
+    line-height: 1.5;
+}
+
+/* hide nav bar and hidden class */
+nav{
+    display: none;
+}
+
+.hidden{
+    display: none;
+}
+
+/* make header pic smaller like in webstyle */
+header img{
+    width:450px;
+    height: 337px;
+}
+
+/* Remove footer except for printed-from line */
+footer p{
+    display: none;
+}
+
+.printed-from{
+    display: block;
+}
+
+/* Remove text decoration from all links, and print out URL */
+a{
+    color: black;
+    text-transform: none;
+}
+
+aside a{
+    text-decoration: none;
+}
+
+a:after{
+    content: " (" attr(href) ") ";
+}
+
+/* Remove video from music page */
+iframe{
+    display: none;
+}
+
+/* keep table styling from webstyle */
+th, td{
+    padding: 5px 10px;
+}
+
+th{
+    text-transform: uppercase;
+    border-bottom: 2px solid #111111;
+    border-top: 1px solid #999;
+    text-align: left;
+}
+
+tr{
+    text-align: right;
+}
+
+td.mountain-name{
+    text-align: left;
+}
+
+tr.even{
+    background-color: lightgray;
+}

@@ -1,13 +1,13 @@
 body{
     background-color: #EEEEEE;
-    width: 95%;
     max-width: 1000px;
     min-width: 900px;
     margin-right: auto;
     margin-left: auto;
-    font-family: Verdana;
+    font-family: Verdana, Arial, serif;
     font-size: 125%;
 }
+
 
 nav{
     background-color: #333;
@@ -39,12 +39,13 @@ nav a{
 }
 
 nav a:hover{
-    background: #ab9bff;
+    background: #4875a8;
     transition: .5s;
 }
 
 h1{
     text-align: center;
+    color: #4875a8;
 }
 
 figure{
@@ -68,25 +69,68 @@ header img{
     margin-bottom: 20px;
 }
 
+footer{
+    position:absolute;
+    left:0;
+    right:0;
+    overflow: hidden;
+    background-color: #aaaeb3;
+}
+
 footer p{
     clear: both;
     line-height: .25;
+
+}
+
+#footer-left{
+    text-align: left;
+    float: left;
+    width: 33.3%;
+
+}
+#footer-center{
+    float: left;
+    text-align: center;
+    width: 33.3%;
+
+}
+#footer-right{
+    float: right;
+
+}
+
+
+.printed-from{
+    display: none;
 }
 
 article h3, h4{
     clear: both;
     line-height: 10px;
     margin-bottom: 10px;
+    color: #4465b8;
 }
 
 article h4{
     line-height: 0px;
     margin-bottom: 0px;
+    color: #284c75;
+}
+
+h2{
+    color: #4b4b52;
 }
 
 article ul{
     clear: both;
     margin-bottom: 50px;
+}
+
+section{
+    background-color: white;
+    overflow: hidden;
+    padding: 15px;
 }
 
 article p{
@@ -102,13 +146,13 @@ article p{
 
 aside {
     display: inline-block;
-
     width: 30%;
     text-decoration: none;
 }
 
 aside h4{
     margin-left: 40px;
+    color: #e03838;
 }
 
 aside ul{
@@ -157,8 +201,6 @@ td.mountain-name{
     text-align: left;
 }
 
-
-
 tr.even{
     background-color: lightgray;
 }
@@ -166,4 +208,12 @@ tr.even{
 tr:hover{
     background-color: #c3e6e5;
 }
+
+iframe{
+    margin-top: 20px;
+}
+
+
+
+
 

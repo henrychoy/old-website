@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Henry's Hiking Page!</title>
-    <link rel="stylesheet" type="text/css" href="css/webstyle.css">
+    <link rel="stylesheet" type="text/css" href="css/webstyle.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/printstyle.css" media="print">
 </head>
 <body>
 
@@ -40,6 +41,7 @@
             popular hiking milestone known as the NH48, which is to climb all of New Hampshire’s 48 peaks that are 4000 feet or more in
             elevation.  Below is a table of all the peaks I have completed so far.  Check out the links on the right for a full list of
             the NH48 and other cool articles.
+        </p>
 
         <table>
             <thead>
@@ -87,7 +89,6 @@
             </tr>
             </tbody>
         </table>
-        </p>
 
         <!-- This HTML5 aside element will articles about NH48 -->
         <aside>
@@ -109,10 +110,12 @@
 <br>
 <br>
 
-<!-- This HTML5 footer element will contain my name and email link -->
+<!-- This HTML5 footer element will contain my name, email, and last updated date, as well as printed from line -->
 <footer>
-    <p>&copy; 2020 Henry Choy</p>
-    <p><a href="mailto:henrychoy@gmail.com">henrychoy@gmail.com</a></p>
+    <div id="footer-left"><p>&copy; 2020 Henry Choy</p></div>
+    <div id="footer-center"><p><a href="mailto:henrychoy@gmail.com">henrychoy@gmail.com</a></p></div>
+    <div id="footer-right"><p>Last updated: 11/13/2020</p></div>
+    <p class="printed-from">Printed from http://henrychoy.com/</p>
 </footer>
 
 </body>
