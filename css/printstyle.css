@@ -1,6 +1,6 @@
-
+/* change font to Times New Roman and 1.5 spacing */
 body{
-    font-family: "Times New Roman";
+    font-family: "Times New Roman", sans-serif;
 }
 
 p{

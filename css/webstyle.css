@@ -1,3 +1,4 @@
+/* body - centered, bigger font, set width/height */
 body{
     background-color: #EEEEEE;
     max-width: 1000px;
@@ -8,14 +9,13 @@ body{
     font-size: 125%;
 }
 
-
+/* nav bar background and links */
 nav{
     background-color: #333;
     height: 80px;
     min-width: 950px;
     font-size: 120%;
 }
-
 
 nav li{
     display: inline;
@@ -40,7 +40,11 @@ nav a{
 
 nav a:hover{
     background: #4875a8;
-    transition: .5s;
+    transition: 1s;
+}
+
+nav a.active{
+    background: #4875a8;
 }
 
 h1{
@@ -59,6 +63,7 @@ figure figcaption{
 header img{
     width:450px;
     height: 337px;
+    border: solid black 3px;
 }
 
 .logo{
@@ -69,42 +74,42 @@ header img{
     margin-bottom: 20px;
 }
 
+/* footer divided into 3 columns, put on bottom */
 footer{
     position:absolute;
     left:0;
     right:0;
     overflow: hidden;
     background-color: #aaaeb3;
+    font-size: 18px;
 }
 
 footer p{
     clear: both;
     line-height: .25;
-
 }
 
 #footer-left{
     text-align: left;
     float: left;
     width: 33.3%;
-
 }
+
 #footer-center{
     float: left;
     text-align: center;
     width: 33.3%;
-
 }
+
 #footer-right{
     float: right;
-
 }
-
 
 .printed-from{
     display: none;
 }
 
+/* article - styling */
 article h3, h4{
     clear: both;
     line-height: 10px;
@@ -125,8 +130,18 @@ h2{
 article ul{
     clear: both;
     margin-bottom: 50px;
+    line-height: 1.5;
 }
 
+article ul a{
+    text-decoration: none;
+}
+
+article aside ul{
+    line-height: 1.25;
+}
+
+/* section - styling, will contain articles and asides */
 section{
     background-color: white;
     overflow: hidden;
@@ -142,6 +157,11 @@ article p{
 
 .no-aside p{
     width: 100%;
+}
+
+article li:hover{
+    background-color: #c3e6e5;
+    transition: .25s;
 }
 
 aside {
@@ -171,11 +191,11 @@ hr{
     clear: both;
 }
 
+/* table - add styling and highlights */
 table {
     clear: both;
     float: left;
     width: 70%;
-
 }
 
 .hidden{
@@ -207,11 +227,14 @@ tr.even{
 
 tr:hover{
     background-color: #c3e6e5;
+    transition: .25s;
 }
 
 iframe{
     margin-top: 20px;
 }
+
+
 
 
 
