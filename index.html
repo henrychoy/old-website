@@ -8,54 +8,58 @@
 </head>
 <body>
 
-<!-- This HTML5 header element will contain a picture, title of the page, and the nav element -->
-<header>
-    <figure>
-        <img src="images/profile.jpg" alt="Picture of myself and Cooper and Penny" title="Picture of myself and Cooper and Penny"
-             width="600" height="450"/>
-        <figcaption>Picture of myself and Cooper and Penny</figcaption>
-    </figure>
+<main>
+    <!-- This HTML5 header element will contain a picture, title of the page, and the nav element -->
+    <header>
+        <figure>
+            <img src="images/profile.jpg" alt="Picture of myself and Cooper and Penny" title="Picture of myself and Cooper and Penny"
+                 width="600" height="450"/>
+            <figcaption>Picture of myself and Cooper and Penny</figcaption>
+        </figure>
 
-    <h1>Henry's Personal Webpage - Home</h1>
+        <h1>Henry's Personal Webpage - Home</h1>
 
-    <!-- This HTML5 nav element will contain the nav bar -->
-    <nav>
-        <ul>
-            <li><a class="active" href="index.html">Home</a> </li>
-            <li><a href="academic.html">Academic</a> </li>
-            <li><a href="professional.html">Professional</a> </li>
-            <li><a href="hiking.html">Hiking</a> </li>
-            <li><a href="music.html">Music</a> </li>
-        </ul>
-    </nav>
+        <!-- This HTML5 nav element will contain the nav bar -->
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Home</a> </li>
+                <li><a href="academic.html">Academic</a> </li>
+                <li><a href="professional.html">Professional</a> </li>
+                <li><a href="hiking.html">Hiking</a> </li>
+                <li><a href="music.html">Music</a> </li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- This HTML5 section element will my article(s) for this page -->
+    <section>
+        <h2>Welcome to my webpage!</h2>
+        <article class="no-aside">
+            <h3>Introduction</h3>
+            <p>Hello!  My name is Henry Choy and this is the first webpage that I've built from scratch using HTML and CSS.  As I progress through CS601,
+                I'm hoping that I will be able to add more content and make things look nicer, so please check back often!  The main goal of this site is
+                to give you an introduction to my academic and professional background, as well as my hobbies outside of work and school.  You can find
+                all of these sections in the navigation bar at the top of each page.
+                <br>
+                <br>
+                <a href="https://github.com/henrychoy/github.io" target ="_blank">Click Here</a> to view my GitHub repository which contains all the source
+                code for this website.
+            </p>
+        </article>
+    </section>
     <hr>
-</header>
 
-<!-- This HTML5 section element will my article(s) for this page -->
-<section>
-    <h2>Welcome to my webpage!</h2>
-    <article class="no-aside">
-        <h3>Introduction</h3>
-        <p>Hello!  My name is Henry Choy and this is the first webpage that I've built from scratch using HTML and CSS.  As I progress through CS601,
-            I'm hoping that I will be able to add more content and make things look nicer, so please check back often!  The main goal of this site is
-            to give you an introduction to my academic and professional background, as well as my hobbies outside of work and school.  You can find
-            all of these sections in the navigation bar at the top of each page.
-        </p>
+    <!-- For some reason, when I remove this list, the whole page shifts, trying to figure this out... -->
+    <ul class="hidden">
+        <li>HOW CAN I REMOVE THIS LIST???</li>
+        <li>HOW CAN I REMOVE THIS LIST???</li>
+        <li>HOW CAN I REMOVE THIS LIST???</li>
+    </ul>
+</main>
 
-        <p>
-            <a href="https://github.com/henrychoy/github.io" target ="_blank">Click Here</a> to view my GitHub repository which contains all the source
-            code for this website.
-        </p>
-    </article>
-</section>
-<hr>
 
-<!-- For some reason, when I remove this list, the whole page shifts, trying to figure this out... -->
-<ul class="hidden">
-    <li>HOW CAN I REMOVE THIS LIST???</li>
-    <li>HOW CAN I REMOVE THIS LIST???</li>
-    <li>HOW CAN I REMOVE THIS LIST???</li>
-</ul>
+
 
 <!-- This HTML5 footer element will contain my name, email, and last updated date, as well as printed from line -->
 <footer>
