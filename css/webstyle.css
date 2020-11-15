@@ -11,7 +11,7 @@ body{
 
 /* fixing footer issue */
 main{
-    min-height: calc(100vh - 35px);
+    min-height: calc(100% - 35px);
 }
 
 
