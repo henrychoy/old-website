@@ -17,7 +17,8 @@ main{
     display: grid;
 
     grid-template-columns: 1fr 2.5fr 1fr;
-    grid-template-rows: 1fr auto 40px;
+    grid-template-rows: auto auto auto;
+
 }
 
 
@@ -89,7 +90,7 @@ section{
 
     background-color: white;
     padding: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 200px;
 }
 
 h2{
@@ -221,8 +222,12 @@ footer{
     grid-column: 1 / 4;
     line-height: .25;
 
+    grid-row: 3 / 4;
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
+
 
 }
 
