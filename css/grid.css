@@ -13,11 +13,11 @@ body{
 main{
     width: 100%;
     max-height: 100vh;
-
+    
     display: grid;
 
     grid-template-columns: 1fr 2.5fr 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 1fr 2fr 40px;
 
 }
 
@@ -90,7 +90,7 @@ section{
 
     background-color: white;
     padding: 15px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 h2{
