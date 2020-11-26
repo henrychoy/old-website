@@ -21,7 +21,12 @@
   <component name="ChangeListManager">
     <list default="true" id="f684744c-7874-427c-859c-ec7197dc9737" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/academic.html" beforeDir="false" afterPath="$PROJECT_DIR$/academic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/webstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/webstyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hiking.html" beforeDir="false" afterPath="$PROJECT_DIR$/hiking.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music.html" beforeDir="false" afterPath="$PROJECT_DIR$/music.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/professional.html" beforeDir="false" afterPath="$PROJECT_DIR$/professional.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,11 +37,18 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1k7ri3PhjYW4GSNlBG3PBh0j5RU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -48,6 +60,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript.Linters.JSHint" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -68,7 +81,13 @@
       <workItem from="1605227084713" duration="4599000" />
       <workItem from="1605314889722" duration="9513000" />
       <workItem from="1605361153833" duration="1730000" />
-      <workItem from="1605442945804" duration="15919000" />
+      <workItem from="1605442945804" duration="16514000" />
+      <workItem from="1605795156863" duration="197000" />
+      <workItem from="1605913586227" duration="18572000" />
+      <workItem from="1605963381387" duration="36000" />
+      <workItem from="1606055302332" duration="5624000" />
+      <workItem from="1606073975452" duration="17861000" />
+      <workItem from="1606270484980" duration="36000" />
     </task>
     <servers />
   </component>
@@ -88,9 +107,17 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="733" y="292" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605128002375">
+    <state x="733" y="292" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606096096571">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="733" y="292" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605128002375" />
+    <state x="733" y="292" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606096096571" />
+    <state x="441" y="264" key="SettingsEditor" timestamp="1606079069206">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="441" y="264" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606079069206" />
+    <state x="1025" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1606077506568">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1025" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606077506568" />
   </component>
 </project>

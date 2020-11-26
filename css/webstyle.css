@@ -9,8 +9,9 @@ body{
     font-size: 125%;
 }
 
-/* fixing footer issue */
+
 main{
+    /* fixing footer issue */
     min-height: calc(100vh - 35px);
 }
 
@@ -91,6 +92,7 @@ footer{
 
     /* fixing footer issue */
     height: 35px;
+
 }
 
 footer p{

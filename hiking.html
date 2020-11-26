@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Henry's Hiking Page!</title>
-    <link rel="stylesheet" type="text/css" href="css/webstyle.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/grid.css" media="screen">
     <link rel="stylesheet" type="text/css" href="css/printstyle.css" media="print">
 </head>
 <body>
@@ -36,7 +36,7 @@
     <!-- This HTML5 section element will contain my article about NH48 hiking -->
     <section>
         <h2>Hiking Goals</h2>
-        <article>
+        <article class="with-aside">
             <h3>New Hampshire's 48 4000 Footers</h3>
             <p>
                 I recently took an interest in hiking after being cooped up in my home for six months during the pandemic.  My goal is to reach a
@@ -44,6 +44,7 @@
                 elevation.  Below is a table of all the peaks I have completed so far.  Check out the links on the right for a full list of
                 the NH48 and other cool articles.
             </p>
+
 
             <table>
                 <thead>
@@ -102,7 +103,15 @@
             </aside>
         </article>
     </section>
-    <hr>
+
+
+    <!-- This HTML5 footer element will contain my name, email, and last updated date, as well as printed from line -->
+    <footer>
+        <div id="footer-left"><p>&copy; 2020 Henry Choy</p></div>
+        <div id="footer-center"><p><a href="mailto:henrychoy@gmail.com">henrychoy@gmail.com</a></p></div>
+        <div id="footer-right"><p>Last updated: 11/15/20</p></div>
+        <p class="printed-from">Printed from http://henrychoy.com/</p>
+    </footer>
 </main>
 
 
@@ -110,13 +119,7 @@
 <br>
 <br>
 
-<!-- This HTML5 footer element will contain my name, email, and last updated date, as well as printed from line -->
-<footer>
-    <div id="footer-left"><p>&copy; 2020 Henry Choy</p></div>
-    <div id="footer-center"><p><a href="mailto:henrychoy@gmail.com">henrychoy@gmail.com</a></p></div>
-    <div id="footer-right"><p>Last updated: 11/15/20</p></div>
-    <p class="printed-from">Printed from http://henrychoy.com/</p>
-</footer>
+
 
 </body>
 </html>
