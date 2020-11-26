@@ -15,7 +15,7 @@ main{
     display: grid;
 
     grid-template-columns: 1fr 2.5fr 1fr;
-    grid-template-rows: auto auto 40px;
+    grid-template-rows: auto auto 5%;
 }
 
 
@@ -216,7 +216,7 @@ iframe{
 footer{
     background-color: #aaaeb3;
     font-size: 18px;
-    grid-column: 1 / 6;
+    grid-column: 1 / 4;
     line-height: .25;
 
     display: grid;
