@@ -5,13 +5,13 @@ body{
     background-color: #EEEEEE;
     font-family: Verdana, Arial, serif;
     font-size: 125%;
-    max-width: 100%;
+
 
 
 }
 
 main{
-    width: 100%;
+
     max-height: 100vh;
     
     display: grid;
@@ -48,14 +48,13 @@ h1{
 /* nav bar background and links */
 nav{
     background-color: #333;
-    height: 80px;
-    min-width: 950px;
+
     font-size: 120%;
 }
 
 nav li{
     display: inline;
-    padding: 20px;
+    padding: .5em;
     line-height: 80px;
 }
 
@@ -70,7 +69,7 @@ nav a{
     list-style: none;
     color: white;
     text-transform: uppercase;
-    padding: 13px;
+    padding: .5em;
     float: none;
 }
 
@@ -86,6 +85,8 @@ nav a.active{
 
 /* section - styling, will contain articles and asides */
 section{
+
+
     grid-column: 2;
 
     background-color: white;
@@ -111,11 +112,14 @@ article aside ul{
     line-height: 1.25;
 }
 
-.with-aside{
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: auto auto auto;
 
+
+@media screen and (min-width: 1100px){
+    .with-aside{
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: auto auto auto;
+    }
 }
 
 .with-aside p{
@@ -141,14 +145,14 @@ h3{
     grid-column: 1;
     color: #4465b8;
     margin: 0;
-    line-height: 10px;
+    line-height: 1em;
 }
 
 h4{
 
     margin-bottom: 0;
     color: #284c75;
-    line-height: 10px;
+    line-height: 1em;
 }
 
 
@@ -207,10 +211,7 @@ tr:hover{
     transition: .25s;
 }
 
-#music-list{
-    display: grid;
-    grid-template-columns: 60% 40%;
-}
+
 
 iframe{
     margin-top: 15px;
