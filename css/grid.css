@@ -45,32 +45,55 @@ h1{
     color: #4875a8;
 }
 
-/* nav bar background and links */
+/* PUT NAV STUFF HERE */
 nav{
     background-color: #333;
-
-    font-size: 120%;
+    font-size: 1.5em;
+    min-width: 30em;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
-
-nav li{
-    display: inline;
-    padding: .5em;
-    line-height: 80px;
-}
-
 nav ul{
+    display: inline-block;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
-
-nav a{
+nav ul li{
+    display: inline-block;
+    position: relative;
+    float: left;
+    padding: .5em;
+    margin-right: 1em;
+}
+nav ul li a{
+    display: inline-block;
     text-decoration: none;
-    list-style: none;
     color: white;
     text-transform: uppercase;
-    padding: .5em;
-    float: none;
+    padding: 15px;
+    transition: all ease 0.3s;
+}
+nav ul li.dropdown ul{
+
+    position: absolute;
+    left: 0;
+    display: none;
+
+
+}
+nav ul li.dropdown ul a{
+    font-size: .75em;
+    padding: 0;
+
+}
+
+
+nav ul li.dropdown:hover ul{
+    display: block;
+    background-color: #333;
+
 }
 
 nav a:hover{
@@ -81,6 +104,8 @@ nav a:hover{
 nav a.active{
     background: #4875a8;
 }
+
+
 
 
 /* section - styling, will contain articles and asides */
@@ -118,18 +143,24 @@ article aside ul{
     .with-aside{
         display: grid;
         grid-template-columns: 70% 30%;
-        grid-template-rows: auto auto auto;
+
     }
 }
 
+article{
+    margin-bottom: 2em;
+}
+
+
 .with-aside p{
     grid-column: 1;
+    margin-right: 1em;
 }
 
 aside{
-
     text-decoration: none;
-
+    border: solid lightsteelblue;
+    padding: 0;
 }
 
 .logo{
@@ -162,13 +193,16 @@ article li:hover{
 }
 
 
+
 aside h4{
-    margin-left: 40px;
+    margin: 1em;
     color: #e03838;
 }
 
 aside ul{
     list-style: none;
+    padding-left: 20px;
+
 }
 
 aside a{
@@ -176,7 +210,8 @@ aside a{
 }
 
 aside li{
-    padding-bottom: 20px;
+    margin-bottom: 2em;
+
 }
 
 table{
