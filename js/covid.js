@@ -3,12 +3,13 @@
 const form = document.getElementById("form");
 const inputValue = document.getElementById("inputValue");
 const display = document.getElementById("display");
+const displayUSA = document.getElementById("display-USA");
 
-window.addEventListener("load", getCovid);
+window.addEventListener("load", getWorld);
 
 
-function getCovid(e){
-    e.preventDefault();
+function getWorld(e){
+
     const request = new XMLHttpRequest();
     request.withCredentials = true;
     request.open('GET', 'https://api.covid19api.com/summary', true);
