@@ -235,7 +235,7 @@ tr{
     text-align: right;
 }
 
-td.mountain-name{
+td.row-name{
     text-align: left;
 }
 
@@ -292,9 +292,6 @@ footer{
 
 
 
-.weather{
-    text-align: center;
-}
 
 
 

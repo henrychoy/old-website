@@ -2,7 +2,7 @@
 
 const form = document.getElementById("form");
 const inputValue = document.getElementById("inputValue");
-const display = document.getElementById("display-weather");
+const display = document.getElementById("display");
 
 document.getElementById("form").addEventListener('submit', getWeather);
 

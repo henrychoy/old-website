@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Henry's Personal Webpage!</title>
+    <title>Covid Tracker</title>
     <link rel="stylesheet" type="text/css" href="css/grid.css" media="screen">
     <link rel="stylesheet" type="text/css" href="css/printstyle.css" media="print">
+    <script defer src="js/covid.js"></script>
 </head>
 <body>
 
@@ -18,12 +19,12 @@
             <figcaption>Picture of myself and Cooper and Penny</figcaption>
         </figure>
 
-        <h1>Henry's Personal Webpage - Home</h1>
+        <h1>Covid Tracker</h1>
 
         <!-- This HTML5 nav element will contain the nav bar -->
         <nav>
             <ul>
-                <li><a class="active" href="index.html">Home</a> </li>
+                <li><a href="index.html">Home</a> </li>
                 <li><a href="academic.html">School</a> </li>
                 <li><a href="professional.html">Work</a> </li>
                 <li class="dropdown">
@@ -34,11 +35,11 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#">Apps</a>
+                    <a href="#" class="active">Apps</a>
                     <ul>
                         <li><a href="weather.html">Weather</a></li>
                         <li><a href="stocks.html">Stocks</a></li>
-                        <li><a href="covid.html">Covid</a></li>
+                        <li><a href="covid.html" class="active">Covid</a></li>
                     </ul>
                 </li>
             </ul>
@@ -48,19 +49,30 @@
 
     <!-- This HTML5 section element will my article(s) for this page -->
     <section>
-        <h2>Welcome to my webpage!</h2>
-        <article class="no-aside">
-            <h3>Introduction</h3>
-            <p>Hello!  My name is Henry Choy and this is the first webpage that I've built from scratch using HTML and CSS.  As I progress through CS601,
-                I'm hoping that I will be able to add more content and make things look nicer, so please check back often!  The main goal of this site is
-                to give you an introduction to my academic and professional background, as well as my hobbies outside of work and school.  You can find
-                all of these sections in the navigation bar at the top of each page.
-                <br>
-                <br>
-                <a href="https://github.com/henrychoy/github.io" target ="_blank">Click Here</a> to view my GitHub repository which contains all the source
-                code for this website.
-            </p>
-        </article>
+        <h2>Covid Tracker</h2>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Country</th>
+                <th>New Cases</th>
+                <th>New Deaths</th>
+                <th>Total Cases</th>
+                <th>Total Deaths</th>
+            </tr>
+            </thead>
+            <tbody id="display">
+
+            </tbody>
+        </table>
+
+        <br>
+        <br>
+        <br>
+
+
+
+
     </section>
 
 
