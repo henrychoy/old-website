@@ -49,7 +49,7 @@ h1{
 nav{
     background-color: #333;
     font-size: 1.5em;
-    min-width: 25em;
+    min-width: 28em;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -65,7 +65,7 @@ nav ul li{
     position: relative;
     float: left;
     padding: .5em;
-    margin-right: 1em;
+
 }
 nav ul li a{
     display: inline-block;
@@ -286,10 +286,14 @@ footer{
     text-align: right;
 }
 
-
-
 .printed-from{
     display: none;
+}
+
+
+
+.weather{
+    text-align: center;
 }
 
 
