@@ -27,7 +27,7 @@ function getWeather(position){
             const data = JSON.parse(request.responseText);
 
             display.innerHTML = `<h3>Current conditions in your area: ${data.name}</h3> <br>
-                                 <img id='weather' src="http://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="conditions"> <br>
+                                 <img id='weather' src="https://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="conditions"> <br>
                                  Temperature: ${data.main.temp.toFixed(0)}&deg <br>
                                  Feels like: ${data.main.feels_like.toFixed(0)}&deg <br>
                                  Conditions: ${data.weather[0].description} <br>
