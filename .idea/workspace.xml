@@ -22,8 +22,10 @@
     <list default="true" id="f684744c-7874-427c-859c-ec7197dc9737" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/covid.html" beforeDir="false" afterPath="$PROJECT_DIR$/covid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hiking.html" beforeDir="false" afterPath="$PROJECT_DIR$/hiking.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/covid.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/covid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks.html" beforeDir="false" afterPath="$PROJECT_DIR$/stocks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/weather.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/weather.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weather.html" beforeDir="false" afterPath="$PROJECT_DIR$/weather.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +95,10 @@
       <workItem from="1606923633524" duration="102000" />
       <workItem from="1607038951201" duration="15378000" />
       <workItem from="1607089667647" duration="8871000" />
-      <workItem from="1607109490033" duration="5956000" />
+      <workItem from="1607109490033" duration="7736000" />
+      <workItem from="1607192200909" duration="599000" />
+      <workItem from="1607220283779" duration="10784000" />
+      <workItem from="1607261654993" duration="36513000" />
     </task>
     <servers />
   </component>
@@ -113,6 +118,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="536" y="147" key="#JSHint" timestamp="1607221163753">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="536" y="147" key="#JSHint/0.0.1920.1040@0.0.1920.1040" timestamp="1607221163753" />
     <state x="733" y="292" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606096096571">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -129,9 +138,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-27" y="85" width="1205" height="802" key="dock-window-2/0.0.1920.1040@0.0.1920.1040" timestamp="1607058760325" />
-    <state x="1025" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1606077506568">
+    <state x="1025" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1607290385449">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1025" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606077506568" />
+    <state x="1025" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607290385449" />
   </component>
 </project>

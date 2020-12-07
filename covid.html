@@ -49,9 +49,61 @@
 
     <!-- This HTML5 section element will my article(s) for this page -->
     <section>
-        <h2>Covid Tracker</h2>
+        <h2 id="test">Covid Tracker</h2>
 
-        <table>
+        <article id="covid-dashboard">
+            <div class="header"><img src="images/usa.png" alt="American flag Icon made by www.flaticon.com/authors/freepik"> <h3 class="covid-header">United States</h3></div>
+            <div id="usa-cases">Total Cases</div>
+            <div id="usa-deaths">Total Deaths</div>
+            <div id="usa-recovered">Total Recovered</div>
+
+            <div class="header"><img id="globe" src="images/globe.png" alt="Globe Icon made by www.flaticon.com/authors/freepik"> <h3 class="covid-header">Global</h3></div>
+            <div id="global-cases">Total Cases</div>
+            <div id="global-deaths">Total Deaths</div>
+            <div id="global-recovered">Total Recovered</div>
+
+        </article>
+
+        <br>
+
+        <h3>Data Sources</h3>
+        <p id="covid-p">
+            USA data is gathered from <a href="https://covidtracking.com/data/api" target="_blank">The COVID Tracking Project API</a>.
+            Global data is gathered from <a href="https://covid19api.com/" target="_blank">The Covid19 API</a> built by Kyle Redelinghuys.
+            <a href="#global-table">Click Here</a> to jump to the global table with data broken down by country.  Sometimes the data is
+            unavailable when the API's are updating, so wait awhile and try again later.  Also please don't refresh too often because
+            the number of data pulls may be limited.
+        </p>
+
+        <br>
+        <br>
+
+
+        <h3>USA Covid Data by State</h3>
+        <div id="MA-updated"></div>
+        <!-- USA table -->
+        <table id="usa-table" class="sticky-header">
+            <thead>
+            <tr>
+                <th>State</th>
+                <th>New Cases</th>
+                <th>New Deaths</th>
+                <th>Total Cases</th>
+                <th>Total Deaths</th>
+            </tr>
+            </thead>
+            <tbody id="display-USA">
+
+            </tbody>
+        </table>
+
+        <br>
+        <br>
+
+        <h3 id="global-table">Global Covid Data by Country</h3>
+        <div id="global-updated"></div>
+        <!-- World table -->
+        <table class="sticky-header">
             <thead>
             <tr>
                 <th>Country</th>
@@ -70,20 +122,7 @@
         <br>
         <br>
 
-        <table>
-            <thead>
-            <tr>
-                <th>Country</th>
-                <th>New Cases</th>
-                <th>New Deaths</th>
-                <th>Total Cases</th>
-                <th>Total Deaths</th>
-            </tr>
-            </thead>
-            <tbody id="display-USA">
 
-            </tbody>
-        </table>
 
 
 
@@ -94,6 +133,9 @@
     <br>
     <br>
 
+
+
+
     <!-- This HTML5 footer element will contain my name, email, and last updated date, as well as printed from line -->
     <footer>
         <div id="footer-left"><p>&copy; 2020 Henry Choy</p></div>
@@ -102,9 +144,8 @@
         <p class="printed-from">Printed from http://henrychoy.com/</p>
     </footer>
 
+
 </main>
-
-
 
 
 

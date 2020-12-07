@@ -6,8 +6,6 @@ body{
     font-family: Verdana, Arial, serif;
     font-size: 125%;
 
-
-
 }
 
 main{
@@ -35,14 +33,16 @@ figure figcaption{
 }
 
 header img{
-    width:450px;
-    height: 337px;
+    width:400px;
+    height: 300px;
     border: solid black 3px;
 }
 
 h1{
     text-align: center;
     color: #4875a8;
+    margin-top: -.25em;
+    margin-bottom: .25em;
 }
 
 /* PUT NAV STUFF HERE */
@@ -121,6 +121,7 @@ section{
 
 h2{
     color: #4b4b52;
+    margin: 0 0 .5em 0;
 }
 
 article ul{
@@ -215,10 +216,10 @@ aside li{
 }
 
 table{
-    margin-top: 2em;
+    margin-top: 1em;
     grid-row: 4;
-
 }
+
 
 th, td{
     padding: 5px 10px;
@@ -231,6 +232,13 @@ th{
     text-align: left;
 }
 
+.sticky-header th{
+    position: sticky;
+    top: 0;
+    background-color: #3e4d5e;
+    color: white;
+}
+
 tr{
     text-align: right;
 }
@@ -239,7 +247,7 @@ td.row-name{
     text-align: left;
 }
 
-tr.even{
+table tbody tr:nth-child(even) td {
     background-color: lightgray;
 }
 
@@ -291,12 +299,47 @@ footer{
 }
 
 
+#covid-dashboard{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 5px;
+    text-align: center;
+}
 
+#covid-dashboard .header{
+    grid-column-start: span 3;
+    text-align: left;
+    padding-top: 1em;
+}
 
+#covid-dashboard img{
+    height: 1em;
+    width: 1.5em;
+}
 
+#covid-dashboard #globe{
+    height: 1.5em;
+    width: 1.5em;
+}
 
+#covid-dashboard #usa-cases, #usa-deaths, #usa-recovered, #global-cases, #global-deaths, #global-recovered{
+    border: solid black 1px;
 
+}
 
+#deaths{
+    color: red;
+}
 
+#recovered{
+    color: green;
+}
 
+#covid-p{
+    margin-top: 5px;
+}
 
+.covid-header{
+    display: inline-block;
+}
