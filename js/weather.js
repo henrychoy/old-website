@@ -19,7 +19,7 @@ function getWeather(position){
     let lat = position.coords.latitude;
     let long = position.coords.longitude;
     const request = new XMLHttpRequest();
-    request.open('GET', 'http://api.openweathermap.org/data/2.5/weather?lat='+ lat +'&lon='+ long +'&units=imperial&mode=json&appid=70ef88575b961360bd130eeab051f901', true);
+    request.open('GET', 'https://api.openweathermap.org/data/2.5/weather?lat='+ lat +'&lon='+ long +'&units=imperial&mode=json&appid=70ef88575b961360bd130eeab051f901', true);
 
     request.onload = function () {
         if (request.status === 200 && navigator.geolocation) {
