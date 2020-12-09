@@ -51,17 +51,31 @@
     <section>
         <h2>Stocks App</h2>
 
+        <article id="stocks-dashboard">
+            <div class="header"><h3 class="covid-header">Indexes</h3></div>
+            <div id="dow">Dow Jones</div>
+            <div id="sp500">S&P 500</div>
+            <div id="nasdaq">Nasdaq</div>
+
+        </article>
+
+
+
+        <h3>Stock Search</h3>
+        <br>
         <form id="form">
-            <input type="text" id="inputValue">
+            <input type="text" id="inputValue" placeholder="Enter ticker symbol...">
             <input type="submit" value="Submit" id="btn">
+            <div id="error"></div>
         </form>
 
         <br>
-        <br>
-        <br>
 
-        <div id="display">
+        <div id="stock-container">
+            <div id="stock-display"></div>
         </div>
+
+
 
 
 

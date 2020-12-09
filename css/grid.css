@@ -325,7 +325,7 @@ footer{
 
 #covid-dashboard #usa-cases, #usa-deaths, #usa-recovered, #global-cases, #global-deaths, #global-recovered{
     border: solid black 1px;
-
+    padding: 5px;
 }
 
 #deaths{
@@ -342,4 +342,68 @@ footer{
 
 .covid-header{
     display: inline-block;
+}
+
+#MA-updated, #global-updated{
+    font-size: .75em;
+}
+
+#inputValue{
+    height: 40px;
+    width: 200px;
+    background: #e7e7e7;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+#inputValue:placeholder-shown{
+    font-size: 15px;
+    text-transform: initial;
+}
+
+#btn{
+    height: 40px;
+    width: 100px;
+    background: #e7e7e7;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+#stocks-dashboard{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 5px;
+    text-align: center;
+}
+
+#stocks-dashboard .header{
+    grid-column-start: span 3;
+    text-align: left;
+    padding-top: 1em;
+}
+
+#stocks-dashboard #dow, #sp500, #nasdaq, #global-cases, #global-deaths, #global-recovered{
+    border: solid black 1px;
+    padding: 5px;
+}
+
+#stock-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#stock-display{
+    grid-column-start: 1;
+    border: solid black 1px;
+    display: none;
+    padding: 10px;
 }

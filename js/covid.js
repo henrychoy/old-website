@@ -20,7 +20,9 @@ function getStates(e){
             let dataUSA = JSON.parse(request.responseText);
             window.console.log(dataUSA);
 
-            document.getElementById("MA-updated").innerHTML = `Last Updated (for MA): ${dataUSA[21].dateModified}`;
+
+            let time = new Date(Date.parse(dataUSA[21].dateModified));
+            document.getElementById("MA-updated").innerHTML = `Last Updated (for MA): ${time}`;
 
             let htmlStringUSA = '';
             for (let i=0; i < dataUSA.length; i++) {
@@ -111,7 +113,8 @@ function getGlobalTotals(e) {
                                                                               +${globalData.todayRecovered.toLocaleString()}</div>`;
 
 
-            document.getElementById("global-updated").innerHTML = `Last updated: ${Date(globalData.updated)}`;
+            let time = new Date(globalData.updated);
+            document.getElementById("global-updated").innerHTML = `Last updated: ${time}`;
 
         }
     };

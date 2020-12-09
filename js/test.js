@@ -11,7 +11,9 @@ function getWorld(e){
 
     const request = new XMLHttpRequest();
     request.withCredentials = false;
-    request.open('GET', 'https://disease.sh/v3/covid-19/states?yesterday=true', true);
+    request.open("GET", 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/market/v2/get-quotes?symbols=^DJI,^GSPC&region=US');
+    request.setRequestHeader("x-rapidapi-key", "3eef51a751msh417ccc45b932b59p1193c3jsn30ec989c6278");
+    request.setRequestHeader("x-rapidapi-host", "apidojo-yahoo-finance-v1.p.rapidapi.com");
 
     request.onload = function () {
         if (request.status === 200) {
