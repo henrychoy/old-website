@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Henry's Personal Webpage!</title>
+    <title>Vue To-Do</title>
     <link rel="stylesheet" type="text/css" href="css/grid.css" media="screen">
     <link rel="stylesheet" type="text/css" href="css/printstyle.css" media="print">
 </head>
@@ -13,17 +13,17 @@
     <!-- This HTML5 header element will contain a picture, title of the page, and the nav element -->
     <header>
         <figure>
-            <img src="images/profile.jpg" alt="Picture of myself and Cooper and Penny" title="Picture of myself and Cooper and Penny"
+            <img src="images/todo.jpg" alt="Picture of checklist" title="Picture of checklist"
                  width="600" height="450"/>
-            <figcaption>Picture of myself and Cooper and Penny</figcaption>
+            <figcaption><span>Photo by <a href="https://unsplash.com/@glenncarstenspeters?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Glenn Carstens-Peters</a> on <a href="https://unsplash.com/s/photos/checklist?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></span></figcaption>
         </figure>
 
-        <h1>Henry's Personal Webpage - Home</h1>
+        <h1>Vue To-Do</h1>
 
         <!-- This HTML5 nav element will contain the nav bar -->
         <nav>
             <ul>
-                <li><a class="active" href="index.html">Home</a> </li>
+                <li><a href="index.html">Home</a> </li>
                 <li><a href="academic.html">School</a> </li>
                 <li><a href="professional.html">Work</a> </li>
                 <li class="dropdown">
@@ -34,12 +34,12 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#">Apps</a>
+                    <a href="#" class="active">Apps</a>
                     <ul>
                         <li><a href="weather.html">Weather</a></li>
                         <li><a href="stocks.html">Stocks</a></li>
                         <li><a href="covid.html">Covid</a></li>
-                        <li><a href="todo.html">To-Do</a></li>
+                        <li><a href="todo.html" class="active">To-Do</a></li>
                     </ul>
                 </li>
             </ul>
@@ -49,25 +49,54 @@
 
     <!-- This HTML5 section element will my article(s) for this page -->
     <section>
-        <h2>Welcome to my webpage!</h2>
-        <article class="no-aside">
-            <h3>Introduction</h3>
-            <p>Hello!  My name is Henry Choy and this is the first webpage that I've built from scratch using HTML and CSS.  As I progress through CS601,
-                I'm hoping that I will be able to add more content and make things look nicer, so please check back often!  The main goal of this site is
-                to give you an introduction to my academic and professional background, as well as my hobbies outside of work and school.  You can find
-                all of these sections in the navigation bar at the top of each page.
-                <br>
-                <br>
-                <a href="https://github.com/henrychoy/github.io" target ="_blank">Click Here</a> to view my GitHub repository which contains all the source
-                code for this website.
-            </p>
-        </article>
+        <h2>Vue To-Do App</h2>
+
+        <div id="app">
+            <form id="form" @submit.prevent="addToDo">
+                <input type="text" id="inputValue-todo" placeholder="What do I need to do..." v-model="newToDo">
+                <input type="submit" value="Add" id="btn">
+            </form>
+
+            <ul id="todo-list">
+                <li v-for="todo in todos">
+                    <span :class="{done: todo.done}">{{todo.title}}</span>
+                    <input type="checkbox" v-model="todo.done">
+                </li>
+            </ul>
+
+        </div>
+
     </section>
 
+    <!--Include Vue-->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
-    <br>
-    <br>
-    <br>
+    <!--Create Vue instance-->
+    <script>
+        /*jshint esversion: 6 */
+
+        let app = new Vue({
+            el: '#app',
+
+            data: {
+                newToDo: '',
+                todos: [],
+            },
+
+            methods: {
+                addToDo() {
+                    this.todos.push({
+                        title: this.newToDo,
+                        done: false
+                    });
+
+                    this.newToDo = '';
+                }
+            }
+
+        })
+    </script>
+
 
     <!-- This HTML5 footer element will contain my name, email, and last updated date, as well as printed from line -->
     <footer>
@@ -78,11 +107,8 @@
     </footer>
 
 </main>
-
-
-
-
-
-
 </body>
+
+
+
 </html>

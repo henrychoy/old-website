@@ -360,6 +360,18 @@ footer{
     margin: 0;
 }
 
+#inputValue-todo{
+    height: 40px;
+    width: 400px;
+    background: #e7e7e7;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+
 #inputValue:placeholder-shown{
     font-size: 15px;
     text-transform: initial;
@@ -407,3 +419,18 @@ footer{
     display: none;
     padding: 10px;
 }
+
+#todo-list{
+    list-style: none;
+    padding: 0;
+}
+
+#todo-list li{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.done{
+    text-decoration: line-through;
+}
+
