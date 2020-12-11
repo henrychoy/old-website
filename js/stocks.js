@@ -18,6 +18,7 @@ function getStock(e){
             const data = JSON.parse(request.responseText);
             window.console.log(data);
             if (data.quoteResponse.result.length === 0){
+                document.getElementById("error").style.display="block";
                 document.getElementById("error").innerText = "Invalid input! Please try again.";
                 document.getElementById("error").style.color="red";
             }
