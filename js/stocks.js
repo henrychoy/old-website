@@ -32,7 +32,7 @@ function getStock(e){
             display.style.display = "initial";
 
             display.innerHTML = `${data.quoteResponse.result[0].longName} (${data.quoteResponse.result[0].symbol})<br>
-                                 Price: $${data.quoteResponse.result[0].regularMarketPrice.toFixed(2)}<br>
+                                 Price: $${data.quoteResponse.result[0].regularMarketPrice.toLocaleString()}<br>
                                  Chg Amt: <div id="chgAmt">${changeAmount}</div><br>
                                  Chg Percent: <div id="chgPercent">${changePercent}%</div>`;
 
@@ -78,9 +78,11 @@ function getDefaultStocks(e){
             const data = JSON.parse(request.responseText);
             window.console.log(data);
 
+            /* .toFixed(2) to force 2 decimal places */
+
             /* DOW */
             document.getElementById("dow").innerHTML = `Dow Jones<br>
-                                                                ${data.quoteResponse.result[0].regularMarketPrice.toFixed(2)}<br>
+                                                                ${data.quoteResponse.result[0].regularMarketPrice.toLocaleString()}<br>
                                                                 Chg Amt: <div id="dowChgAmt">${data.quoteResponse.result[0].regularMarketChange.toFixed(2)}</div><br>
                                                                 Chg Percent: <div id="dowChgPercent">${data.quoteResponse.result[0].regularMarketChangePercent.toFixed(2)}%</div><br>
                                                                 `;
@@ -104,7 +106,7 @@ function getDefaultStocks(e){
 
             /* S&P 500 */
             document.getElementById("sp500").innerHTML = `S&P 500<br>
-                                                                ${data.quoteResponse.result[1].regularMarketPrice.toFixed(2)}<br>
+                                                                ${data.quoteResponse.result[1].regularMarketPrice.toLocaleString()}<br>
                                                                 Chg Amt: <div id="spChgAmt">${data.quoteResponse.result[1].regularMarketChange.toFixed(2)}</div><br>
                                                                 Chg Percent: <div id="spChgPercent">${data.quoteResponse.result[1].regularMarketChangePercent.toFixed(2)}%</div><br>
                                                                 `;
@@ -128,7 +130,7 @@ function getDefaultStocks(e){
 
             /* NASDAQ */
             document.getElementById("nasdaq").innerHTML = `Nasdaq<br>
-                                                                ${data.quoteResponse.result[2].regularMarketPrice.toFixed(2)}<br>
+                                                                ${data.quoteResponse.result[2].regularMarketPrice.toLocaleString()}<br>
                                                                 Chg Amt: <div id="nasChgAmt">${data.quoteResponse.result[2].regularMarketChange.toFixed(2)}</div><br>
                                                                 Chg Percent: <div id="nasChgPercent">${data.quoteResponse.result[2].regularMarketChangePercent.toFixed(2)}%</div><br>
                                                                 `;
