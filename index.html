@@ -5,6 +5,7 @@
     <title>Henry's Personal Webpage!</title>
     <link rel="stylesheet" type="text/css" href="css/grid.css" media="screen">
     <link rel="stylesheet" type="text/css" href="css/printstyle.css" media="print">
+    <script defer src="js/time.js"></script>
 </head>
 <body>
 
@@ -52,15 +53,33 @@
         <h2>Welcome to my webpage!</h2>
         <article class="no-aside">
             <h3>Introduction</h3>
-            <p>Hello!  My name is Henry Choy and this is the first webpage that I've built from scratch using HTML and CSS.  As I progress through CS601,
-                I'm hoping that I will be able to add more content and make things look nicer, so please check back often!  The main goal of this site is
-                to give you an introduction to my academic and professional background, as well as my hobbies outside of work and school.  You can find
-                all of these sections in the navigation bar at the top of each page.
+            <p>
+                <span id="greeting"></span>  My name is <u><i>Henry Choy</i></u> and this is the first webpage that I've built from scratch using <strong>HTML</strong>,
+                <strong>CSS</strong>, and <strong>JavaScript</strong>.  As I progress through CS601, I'm hoping that I will be able to add more content and make things look nicer, so please
+                check back often!  The main goal of this site is to give you an introduction to my academic and professional background, as well as my hobbies
+                outside of work and school.  You can find all of these sections in the <u><i>navigation bar</i></u> at the top of each page.
                 <br>
                 <br>
                 <a href="https://github.com/henrychoy/github.io" target ="_blank">Click Here</a> to view my GitHub repository which contains all the source
                 code for this website.
             </p>
+                <br>
+                <br>
+
+            <h3>Contact Info</h3>
+            <p>
+                Please feel free to contact me using the channels below.  I would love to hear from you!
+            </p>
+            <a href="https://www.linkedin.com/in/henrychoylinkedin/" target="_blank"><img src="images/linkedin.png" alt="Linkedin icon"></a>
+            <a href="mailto:henrychoy@gmail.com" target="_blank"><img src="images/gmail.png" alt="Gmail icon"></a>
+            <a href="https://github.com/henrychoy/github.io" target="_blank"><img src="images/github.png" alt="GitHub icon"></a>
+            <a href="https://www.youtube.com/chocotiger" target="_blank"><img src="images/youtube.png" alt="YouTube icon"></a>
+            <br>
+            <sub>
+                Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+            </sub>
+
+
         </article>
     </section>
 
@@ -73,7 +92,7 @@
     <footer>
         <div id="footer-left"><p>&copy; 2020 Henry Choy</p></div>
         <div id="footer-center"><p><a href="mailto:henrychoy@gmail.com">henrychoy@gmail.com</a></p></div>
-        <div id="footer-right"><p>Last updated: 11/15/20</p></div>
+        <div id="footer-right"><p id="last-updated"></p></div>
         <p class="printed-from">Printed from http://henrychoy.com/</p>
     </footer>
 
