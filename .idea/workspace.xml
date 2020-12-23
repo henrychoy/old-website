@@ -21,19 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f684744c-7874-427c-859c-ec7197dc9737" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Final Demo Check List.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/academic.html" beforeDir="false" afterPath="$PROJECT_DIR$/academic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/covid.html" beforeDir="false" afterPath="$PROJECT_DIR$/covid.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hiking.html" beforeDir="false" afterPath="$PROJECT_DIR$/hiking.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/time.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/music.html" beforeDir="false" afterPath="$PROJECT_DIR$/music.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/professional.html" beforeDir="false" afterPath="$PROJECT_DIR$/professional.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stocks.html" beforeDir="false" afterPath="$PROJECT_DIR$/stocks.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo.html" beforeDir="false" afterPath="$PROJECT_DIR$/todo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather.html" beforeDir="false" afterPath="$PROJECT_DIR$/weather.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +117,8 @@
       <workItem from="1608495913198" duration="12732000" />
       <workItem from="1608647550446" duration="4282000" />
       <workItem from="1608664104580" duration="2521000" />
-      <workItem from="1608679941873" duration="14360000" />
+      <workItem from="1608679941873" duration="14983000" />
+      <workItem from="1608733758357" duration="5829000" />
     </task>
     <servers />
   </component>

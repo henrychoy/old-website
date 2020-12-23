@@ -452,22 +452,35 @@ footer{
 #todo-list li{
     display: grid;
     grid-template-columns: 400px auto auto;
+    margin: .25em;
+    background-color: white;
+    padding: 5px;
+    border: lightgray solid;
 }
 
 .todo-buttons{
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
+
 }
 
 #trash{
-    padding-top: 3px;
+    padding-top: 5px;
+    padding-right: 10px;
+    margin-left: 15px;
+
 }
 
 
 .done{
-    text-decoration: line-through;
-    background-color: #dfffd3;
+    transition: opacity .5s;
     opacity: 50%;
+    background-color: #dfffd3;
+
+}
+
+.done #todo-item{
+    text-decoration: line-through;
 }
 
 

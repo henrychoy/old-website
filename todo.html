@@ -49,21 +49,21 @@
     </header>
 
     <!-- This HTML5 section element will my article(s) for this page -->
-    <section>
+    <section style="background-color: #def5ff">
         <h2>Vue To-Do App</h2>
 
         <div id="app">
             <form id="form" @submit.prevent="addToDo">
-                <input type="text" id="inputValue-todo" placeholder="What do I need to do..." v-model="newToDo" autocomplete="off">
+                <input type="text" id="inputValue-todo" placeholder=" What do I need to do..." v-model="newToDo" autocomplete="off">
                 <input type="submit" value="Add" id="btn">
             </form>
 
             <div v-show="error" style="color:red">Entry cannot be blank!</div>
 
             <ul id="todo-list">
-                <li v-for="(todo, index) in todos">
-                    <span :class="{done: todo.done}">{{todo.title}}</span>
-                    <input class="todo-buttons" type="checkbox" v-model="todo.done">
+                <li v-for="(todo, index) in todos" :class="{done: todo.done}">
+                    <span id="todo-item">{{todo.title}}</span>
+                    <input class="todo-buttons" type="checkbox" v-model="todo.done" @click="markDone(index)">
                     <i class="fas fa-trash-alt todo-buttons" id="trash" @click="remove(index)"></i>
                 </li>
             </ul>
@@ -80,6 +80,8 @@
     <script>
         /*jshint esversion: 6 */
 
+        const STORAGE_KEY = 'todo-storage';
+
         let app = new Vue({
             el: '#app',
 
@@ -89,9 +91,14 @@
                 error: false
             },
 
+            created(){
+                this.todos = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+                window.console.log(this.todos);
+            },
+
             methods: {
                 addToDo() {
-                    if (this.newToDo === ''){
+                    if (this.newToDo.trim() === ''){
                         this.error = true
                     }
                     else{
@@ -102,12 +109,23 @@
 
                         this.newToDo = '';
                         this.error = false;
+
+                        localStorage.setItem(STORAGE_KEY, JSON.stringify(this.todos))
+
                     }
 
                 },
 
                 remove(index){
                     this.todos.splice(index, 1)
+
+                    localStorage.setItem(STORAGE_KEY, JSON.stringify(this.todos))
+                },
+
+                markDone(index){
+                    this.todos[index].done = !this.todos[index].done;
+                    window.console.log(this.todos[index].title + ' = ' + this.todos[index].done);
+                    localStorage.setItem(STORAGE_KEY, JSON.stringify(this.todos))
                 }
 
             }
