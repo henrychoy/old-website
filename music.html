@@ -5,11 +5,10 @@
     <title>Henry's Music Page!</title>
     <link rel="stylesheet" type="text/css" href="css/grid.css" media="screen">
     <link rel="stylesheet" type="text/css" href="css/printstyle.css" media="print">
-    <script defer src="js/time.js"></script>
 </head>
 <body>
 
-<main>
+<div id="main">
     <!-- This HTML5 header element will contain a picture, title of the page, and the nav element -->
     <header>
         <figure>
@@ -69,23 +68,21 @@
                 </ul>
             </aside>
 
-
-                <ul>
-                    <li><a href="https://youtu.be/7cFkae0j_Ns" target ="_blank">The Entertainer</a></li>
-                    <li><a href="https://youtu.be/0B04--XmZiE" target ="_blank">Maple Leaf Rag</a></li>
-                    <li><a href="https://youtu.be/BGDqO7mVp-Y" target ="_blank">Fig Leaf Rag</a></li>
-                    <li><a href="https://youtu.be/CF-mBeT_ZaQ" target ="_blank">Elite Syncopations</a></li>
-                    <li><a href="https://youtu.be/LVPrKl5Y9p8" target ="_blank">Bethena</a></li>
-                    <li><a href="https://youtu.be/fjoUqVgs0RA" target ="_blank">Something Doing</a></li>
-                    <li><a href="https://youtu.be/Ps15671_EiQ" target ="_blank">Pine Apple Rag</a></li>
-                    <li><a href="https://youtu.be/5Fp2zdAPKyY" target ="_blank">The Chrysanthemum</a></li>
-                    <li><a href="https://youtu.be/T22xXlPlleI" target ="_blank">Magnetic Rag</a></li>
-                    <li><a href="https://youtu.be/W_j5aSnoqbQ" target ="_blank">Palm Leaf Rag</a></li>
-                    <li><a href="https://youtu.be/wtaEezWURNo" target ="_blank">Solace</a></li>
-                </ul>
-
-
         </article>
+
+        <ul>
+            <li><a href="https://youtu.be/7cFkae0j_Ns" target ="_blank">The Entertainer</a></li>
+            <li><a href="https://youtu.be/0B04--XmZiE" target ="_blank">Maple Leaf Rag</a></li>
+            <li><a href="https://youtu.be/BGDqO7mVp-Y" target ="_blank">Fig Leaf Rag</a></li>
+            <li><a href="https://youtu.be/CF-mBeT_ZaQ" target ="_blank">Elite Syncopations</a></li>
+            <li><a href="https://youtu.be/LVPrKl5Y9p8" target ="_blank">Bethena</a></li>
+            <li><a href="https://youtu.be/fjoUqVgs0RA" target ="_blank">Something Doing</a></li>
+            <li><a href="https://youtu.be/Ps15671_EiQ" target ="_blank">Pine Apple Rag</a></li>
+            <li><a href="https://youtu.be/5Fp2zdAPKyY" target ="_blank">The Chrysanthemum</a></li>
+            <li><a href="https://youtu.be/T22xXlPlleI" target ="_blank">Magnetic Rag</a></li>
+            <li><a href="https://youtu.be/W_j5aSnoqbQ" target ="_blank">Palm Leaf Rag</a></li>
+            <li><a href="https://youtu.be/wtaEezWURNo" target ="_blank">Solace</a></li>
+        </ul>
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/wtaEezWURNo" allow="accelerometer;
                 autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -103,7 +100,7 @@
         <div id="footer-right"><p id="last-updated"></p></div>
         <p class="printed-from">Printed from http://henrychoy.com/</p>
     </footer>
-</main>
+</div>
 
 
 
@@ -112,7 +109,10 @@
 <br>
 <br>
 
-
+<script>
+    // last updated in footer
+    document.getElementById("last-updated").textContent = `Last Updated: ${document.lastModified}`;
+</script>
 
 </body>
 </html>

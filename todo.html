@@ -5,12 +5,12 @@
     <title>Vue To-Do</title>
     <link rel="stylesheet" type="text/css" href="css/grid.css" media="screen">
     <link rel="stylesheet" type="text/css" href="css/printstyle.css" media="print">
-    <script defer src="js/time.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 </head>
 <body>
 
 <!-- This HTML5 main element was needed to keep the footer at the bottom of the page on mobile-->
-<main>
+<div id="main">
     <!-- This HTML5 header element will contain a picture, title of the page, and the nav element -->
     <header>
         <figure>
@@ -54,16 +54,20 @@
 
         <div id="app">
             <form id="form" @submit.prevent="addToDo">
-                <input type="text" id="inputValue-todo" placeholder="What do I need to do..." v-model="newToDo">
+                <input type="text" id="inputValue-todo" placeholder="What do I need to do..." v-model="newToDo" autocomplete="off">
                 <input type="submit" value="Add" id="btn">
             </form>
 
+            <div v-show="error" style="color:red">Entry cannot be blank!</div>
+
             <ul id="todo-list">
-                <li v-for="todo in todos">
+                <li v-for="(todo, index) in todos">
                     <span :class="{done: todo.done}">{{todo.title}}</span>
-                    <input type="checkbox" v-model="todo.done">
+                    <input class="todo-buttons" type="checkbox" v-model="todo.done">
+                    <i class="fas fa-trash-alt todo-buttons" id="trash" @click="remove(index)"></i>
                 </li>
             </ul>
+
 
         </div>
 
@@ -82,17 +86,30 @@
             data: {
                 newToDo: '',
                 todos: [],
+                error: false
             },
 
             methods: {
                 addToDo() {
-                    this.todos.push({
-                        title: this.newToDo,
-                        done: false
-                    });
+                    if (this.newToDo === ''){
+                        this.error = true
+                    }
+                    else{
+                        this.todos.push({
+                            title: this.newToDo,
+                            done: false
+                        });
 
-                    this.newToDo = '';
+                        this.newToDo = '';
+                        this.error = false;
+                    }
+
+                },
+
+                remove(index){
+                    this.todos.splice(index, 1)
                 }
+
             }
 
         })
@@ -107,9 +124,12 @@
         <p class="printed-from">Printed from http://henrychoy.com/</p>
     </footer>
 
-</main>
+</div>
+
+<script>
+    // last updated in footer
+    document.getElementById("last-updated").textContent = `Last Updated: ${document.lastModified}`;
+</script>
+
 </body>
-
-
-
 </html>

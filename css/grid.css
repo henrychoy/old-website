@@ -8,20 +8,27 @@ body{
 
 }
 
-main{
+#main{
 
     max-height: 100vh;
-    
+
     display: grid;
+    display: -ms-grid;
 
     grid-template-columns: 1fr 2.5fr 1fr;
     grid-template-rows: 1fr 2fr 40px;
+
+    -ms-grid-columns: 1fr 2.5fr 1fr;
+    -ms-grid-rows: auto auto auto;
 
 }
 
 
 header{
     grid-column: 2;
+
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
 }
 
 figure{
@@ -80,9 +87,10 @@ nav ul li.dropdown ul{
     position: absolute;
     left: 0;
     display: none;
-
-
 }
+
+
+
 nav ul li.dropdown ul a{
     font-size: .75em;
     padding: .25em;
@@ -110,7 +118,8 @@ nav a.active{
 
 /* section - styling, will contain articles and asides */
 section{
-
+    -ms-grid-column: 2;
+    -ms-grid-row: 2;
 
     grid-column: 2;
 
@@ -118,6 +127,7 @@ section{
     padding: 15px;
     margin-bottom: 100px;
 }
+
 
 h2{
     color: #4b4b52;
@@ -139,14 +149,15 @@ article aside ul{
 }
 
 
-
 @media screen and (min-width: 1100px){
     .with-aside{
         display: grid;
+        display: -ms-grid;
         grid-template-columns: 70% 30%;
-
+        -ms-grid-columns: 70% 30%;
     }
 }
+
 
 article{
     margin-bottom: 2em;
@@ -162,11 +173,13 @@ aside{
     text-decoration: none;
     border: solid lightsteelblue;
     padding: 0;
+    -ms-grid-column: 2;
 }
 
 .logo{
     border: 1px solid black;
     margin-bottom: 15px;
+
 }
 
 
@@ -217,7 +230,9 @@ aside li{
 
 table{
     margin-top: 1em;
-    grid-row: 4;
+    grid-row: 3;
+    -ms-grid-row: 3;
+
 }
 
 
@@ -263,6 +278,10 @@ iframe{
 }
 
 footer{
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+
     background-color: #aaaeb3;
     font-size: 18px;
     grid-column: 1 / 4;
@@ -271,25 +290,28 @@ footer{
     grid-row: 3 / 4;
 
     display: grid;
+    display: -ms-grid;
     grid-template-columns: 1fr 1fr 1fr;
-
-
+    -ms-grid-columns: 1fr 1fr 1fr;
 
 }
 
 #footer-left{
     grid-column: 1;
+    -ms-grid-column: 1;
     display: inline-block;
 }
 
 #footer-center{
     grid-column: 2;
+    -ms-grid-column: 2;
     display: inline-block;
     text-align: center;
 }
 
 #footer-right{
     grid-column: 3;
+    -ms-grid-column: 3;
     display: inline-block;
     text-align: right;
 }
@@ -423,14 +445,29 @@ footer{
 #todo-list{
     list-style: none;
     padding: 0;
+    width: 500px;
+    line-height: 1.5em;
 }
 
 #todo-list li{
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 400px auto auto;
 }
+
+.todo-buttons{
+    height: 20px;
+    width: 20px;
+}
+
+#trash{
+    padding-top: 3px;
+}
+
 
 .done{
     text-decoration: line-through;
+    background-color: #dfffd3;
+    opacity: 50%;
 }
+
 

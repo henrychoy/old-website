@@ -22,7 +22,7 @@ Contents:
 
 CHANGES SINCE DEMO
 1. Added HTML tags on the Home and School pages to add bold, italics, and underlines
-2. "Last Updated" in footer is no longer hardcoded, uses time.js to get last save time
+2. "Last Updated" in footer is no longer hardcoded
 3. Added linkedin, gmail, github, and youtube links on Home page under contact info
 4. Stocks input now displays an error when invalid ticker is entered
 

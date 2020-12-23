@@ -6,12 +6,11 @@
     <link rel="stylesheet" type="text/css" href="css/grid.css" media="screen">
     <link rel="stylesheet" type="text/css" href="css/printstyle.css" media="print">
     <script defer src="js/covid.js"></script>
-    <script defer src="js/time.js"></script>
 </head>
 <body>
 
 <!-- This HTML5 main element was needed to keep the footer at the bottom of the page on mobile-->
-<main>
+<div id="main">
     <!-- This HTML5 header element will contain a picture, title of the page, and the nav element -->
     <header>
         <figure>
@@ -147,11 +146,12 @@
         <p class="printed-from">Printed from http://henrychoy.com/</p>
     </footer>
 
+</div>
 
-</main>
-
-
-
+<script>
+    // last updated in footer
+    document.getElementById("last-updated").textContent = `Last Updated: ${document.lastModified}`;
+</script>
 
 </body>
 </html>

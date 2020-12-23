@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TEST</title>
+    <style>
+        .grid{
+            display: -ms-grid;
+            display: grid;
+
+            -ms-grid-columns: 100px 100px;
+            -ms-grid-rows: 100px 100px;
+
+            grid-template-columns: 100px 100px;
+            grid-template-rows: 100px 100px;
+        }
+
+        .grid div{
+            padding: 10px;
+            border: solid black;
+        }
+
+
+
+        #one{
+            -ms-grid-column: 1;
+            -ms-grid-row: 1;
+        }
+        #two{
+            -ms-grid-column: 2;
+            -ms-grid-row: 1;
+        }
+        #three{
+            -ms-grid-column: 1;
+            -ms-grid-row: 2;
+        }
+        #four{
+            -ms-grid-column: 2;
+            -ms-grid-row: 2;
+        }
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+<div class="grid">
+    <div id="one">1</div>
+    <div id="two">2</div>
+    <div id="three">3</div>
+    <div id="four">4</div>
+</div>
+
+
+
+
+
+</body>
+</html>

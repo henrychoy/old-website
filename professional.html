@@ -5,11 +5,10 @@
     <title>Henry's Professional Page</title>
     <link rel="stylesheet" type="text/css" href="css/grid.css" media="screen">
     <link rel="stylesheet" type="text/css" href="css/printstyle.css" media="print">
-    <script defer src="js/time.js"></script>
 </head>
 <body>
 
-<main>
+<div id="main">
     <!-- This HTML5 header element will contain a picture, title of the page, and the nav element -->
     <header>
         <figure>
@@ -52,9 +51,10 @@
     <!-- This HTML5 section element will contain my 2 job articles -->
     <section>
         <h2>Job Experience</h2>
-        <article class="with-aside">
-            <img class="logo" src="images/mgb.jpg" alt="Mass General Brigham logo" title="Mass General Brigham logo"/>
 
+        <img class="logo" src="images/mgb.jpg" alt="Mass General Brigham logo" title="Mass General Brigham logo"/>
+
+        <article class="with-aside">
             <h3>Application Coordinator</h3>
             <p>
                 I currently work as an application coordinator at <a href="https://www.massgeneralbrigham.org/" target ="_blank">Mass General Brigham</a> (MGB, previously named Partners Healthcare).  MGB is a
@@ -63,22 +63,20 @@
                 on board when MGB was overhauling all of their sites' electronic medical record systems into a single universal system called Epic.
                 My team designs, implements, and supports the module that handles documentation in operating rooms.  Please check out the articles
                 on the right to learn more about this project.
+
+                <!-- This HTML5 aside element will articles about MGB -->
+                <aside>
+                    <h4>Articles</h4>
+                    <ul>
+                        <li><a href="https://www.bostonglobe.com/business/2015/05/31/partners-launches-billion-electronic-health-records-system/oo4nJJW2rQyfWUWQlvydkK/story.html" target ="_blank">Boston Globe - Partners’ $1.2b patient data system seen as key to future</a></li>
+                        <li><a href="https://www.newyorker.com/magazine/2018/11/12/why-doctors-hate-their-computers" target ="_blank">The New Yorker - Why Doctors Hate Their Computers</a></li>
+                    </ul>
+                </aside>
             </p>
-
-            <!-- This HTML5 aside element will articles about MGB -->
-            <aside>
-                <h4>Articles</h4>
-                <ul>
-                    <li><a href="https://www.bostonglobe.com/business/2015/05/31/partners-launches-billion-electronic-health-records-system/oo4nJJW2rQyfWUWQlvydkK/story.html" target ="_blank">Boston Globe - Partners’ $1.2b patient data system seen as key to future</a></li>
-                    <li><a href="https://www.newyorker.com/magazine/2018/11/12/why-doctors-hate-their-computers" target ="_blank">The New Yorker - Why Doctors Hate Their Computers</a></li>
-                </ul>
-
-            </aside>
         </article>
 
-
+        <img class="logo" src="images/epsilon.jpg" alt="Epsilon logo" title="Epsilon logo"/>
         <article class="with-aside">
-            <img class="logo" src="images/epsilon.jpg" alt="Epsilon logo" title="Epsilon logo"/>
 
             <h3>Business Systems Analyst</h3>
             <p>
@@ -98,10 +96,8 @@
             </aside>
         </article>
 
-
+        <img class="logo" id="fallon" src="images/fallon.jpg" alt="Fallon EMS logo" title="Fallon EMS logo"/>
         <article class="with-aside">
-            <img class="logo" id="fallon" src="images/fallon.jpg" alt="Fallon EMS logo" title="Fallon EMS logo"/>
-
             <h3>Emergency Medical Technician</h3>
             <p>
                 I worked in a variety of side-jobs throughout the years, but the most interesting one is definitely working as an EMT at
@@ -110,7 +106,6 @@
                 worked the overnight 11pm - 7am shift on Fridays, on top of my normal full-time job.  Although the job was stressful, I
                 learned alot and have the upmost respect to all first-responders and emergency personnel.
             </p>
-
             <!-- This HTML5 aside element will articles about epsilon -->
             <aside>
                 <h4>Articles</h4>
@@ -120,6 +115,7 @@
                 </ul>
             </aside>
         </article>
+
     </section>
 
 
@@ -134,10 +130,12 @@
         <div id="footer-right"><p id="last-updated"></p></div>
         <p class="printed-from">Printed from http://henrychoy.com/</p>
     </footer>
-</main>
+</div>
 
-
-
+<script>
+    // last updated in footer
+    document.getElementById("last-updated").textContent = `Last Updated: ${document.lastModified}`;
+</script>
 
 </body>
 </html>
