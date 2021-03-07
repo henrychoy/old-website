@@ -22,7 +22,7 @@
     <list default="true" id="f684744c-7874-427c-859c-ec7197dc9737" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo.html" beforeDir="false" afterPath="$PROJECT_DIR$/todo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +32,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -58,6 +58,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript.Linters.JSHint" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="test2.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/js/test2.js" working-dir="$PROJECT_DIR$/js">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.test2.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -118,7 +128,16 @@
       <workItem from="1608647550446" duration="4282000" />
       <workItem from="1608664104580" duration="2521000" />
       <workItem from="1608679941873" duration="14983000" />
-      <workItem from="1608733758357" duration="5829000" />
+      <workItem from="1608733758357" duration="6861000" />
+      <workItem from="1608752143107" duration="4043000" />
+      <workItem from="1608821830067" duration="621000" />
+      <workItem from="1608924549434" duration="1520000" />
+      <workItem from="1609012421986" duration="9397000" />
+      <workItem from="1609558886912" duration="3835000" />
+      <workItem from="1609612265894" duration="599000" />
+      <workItem from="1609970402658" duration="1674000" />
+      <workItem from="1610047486219" duration="7000" />
+      <workItem from="1610113610070" duration="1672000" />
     </task>
     <servers />
   </component>
@@ -138,14 +157,30 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="536" y="147" key="#JSHint" timestamp="1607221163753">
+    <state x="536" y="147" key="#JSHint" timestamp="1609559788209">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="536" y="147" key="#JSHint/0.0.1920.1040@0.0.1920.1040" timestamp="1607221163753" />
+    <state x="536" y="147" key="#JSHint/0.0.1920.1040@0.0.1920.1040" timestamp="1609559788209" />
     <state x="733" y="292" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608698758861">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="733" y="292" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608698758861" />
+    <state width="1266" height="146" key="GridCell.Tab.0.bottom" timestamp="1609025741276">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1266" height="146" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609025741276" />
+    <state width="1266" height="146" key="GridCell.Tab.0.center" timestamp="1609025741276">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1266" height="146" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609025741276" />
+    <state width="1266" height="146" key="GridCell.Tab.0.left" timestamp="1609025741276">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1266" height="146" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609025741276" />
+    <state width="1266" height="146" key="GridCell.Tab.0.right" timestamp="1609025741276">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1266" height="146" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609025741276" />
     <state x="441" y="264" key="SettingsEditor" timestamp="1606079069206">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
