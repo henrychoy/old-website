@@ -1,8 +1,7 @@
-/*jshint esversion: 6 */
 
 
-const display = document.getElementById("display");
-const displayUSA = document.getElementById("display-USA");
+let display = document.getElementById("display");
+let displayUSA = document.getElementById("display-USA");
 
 
 getStates();
@@ -11,7 +10,7 @@ getGlobalTotals();
 
 
 function getStates(e){
-    const request = new XMLHttpRequest();
+    let request = new XMLHttpRequest();
     request.withCredentials = false;
     request.open('GET', 'https://api.covidtracking.com/v1/states/current.json', true);
 
@@ -22,7 +21,7 @@ function getStates(e){
 
 
             let time = new Date(Date.parse(dataUSA[21].dateModified));
-            document.getElementById("MA-updated").innerHTML = `Last Updated (for MA): ${time}`;
+            document.getElementById("MA-updated").innerHTML = "Last Updated (for MA): " + time;
 
             let htmlStringUSA = '';
             for (let i=0; i < dataUSA.length; i++) {
@@ -48,7 +47,7 @@ function getStates(e){
 
 
 function getCountries(e){
-    const request = new XMLHttpRequest();
+    let request = new XMLHttpRequest();
     request.withCredentials = false;
     request.open('GET', 'https://disease.sh/v3/covid-19/countries?yesterday=true&sort=cases', true);
 
@@ -93,7 +92,7 @@ function getCountries(e){
 
 
 function getGlobalTotals(e) {
-    const request = new XMLHttpRequest();
+    let request = new XMLHttpRequest();
     request.withCredentials = false;
     request.open('GET', 'https://disease.sh/v3/covid-19/all', true);
 
@@ -122,7 +121,7 @@ function getGlobalTotals(e) {
 }
 
 
-    const states = {
+let states = {
         AZ: 'Arizona',
         AL: 'Alabama',
         AK: 'Alaska',
