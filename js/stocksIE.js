@@ -1,6 +1,4 @@
-"use strict";
 
-/*jshint esversion: 6 */
 var form = document.getElementById("form");
 var inputValue = document.getElementById("inputValue");
 var display = document.getElementById("stock-display");
