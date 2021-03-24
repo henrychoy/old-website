@@ -79,59 +79,43 @@
 
     <!--Create Vue instance-->
     <script>
-        /*jshint esversion: 6 */
-
-        const STORAGE_KEY = 'todo-storage';
-
-        let app = new Vue({
-            el: '#app',
-
-            data: {
-                newToDo: '',
-                todos: [],
-                error: false
-            },
-
-            created(){
-                this.todos = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
-                window.console.log(this.todos);
-            },
-
-            methods: {
-                addToDo() {
-                    if (this.newToDo.trim() === ''){
-                        this.error = true
-                    }
-                    else{
-                        this.todos.push({
-                            title: this.newToDo,
-                            done: false
-                        });
-
-                        this.newToDo = '';
-                        this.error = false;
-
-                        localStorage.setItem(STORAGE_KEY, JSON.stringify(this.todos))
-
-                    }
-
-                },
-
-                remove(index){
-                    this.todos.splice(index, 1)
-
-                    localStorage.setItem(STORAGE_KEY, JSON.stringify(this.todos))
-                },
-
-                markDone(index){
-                    this.todos[index].done = !this.todos[index].done;
-                    window.console.log(this.todos[index].title + ' = ' + this.todos[index].done);
-                    localStorage.setItem(STORAGE_KEY, JSON.stringify(this.todos))
-                }
-
+        var STORAGE_KEY = 'todo-storage';
+        var app = new Vue({
+        el: '#app',
+        data: {
+            newToDo: '',
+            todos: [],
+            error: false
+        },
+        created: function created() {
+            this.todos = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+            window.console.log(this.todos);
+        },
+        methods: {
+            addToDo: function addToDo() {
+            if (this.newToDo.trim() === '') {
+                this.error = true;
+            } else {
+                this.todos.push({
+                title: this.newToDo,
+                done: false
+                });
+                this.newToDo = '';
+                this.error = false;
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(this.todos));
             }
-
-        })
+            },
+            remove: function remove(index) {
+            this.todos.splice(index, 1);
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(this.todos));
+            },
+            markDone: function markDone(index) {
+            this.todos[index].done = !this.todos[index].done;
+            window.console.log(this.todos[index].title + ' = ' + this.todos[index].done);
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(this.todos));
+            }
+        }
+        });
     </script>
 
 
