@@ -9,7 +9,7 @@ getGlobalTotals();
 function getStates(e) {
   var request = new XMLHttpRequest();
   request.withCredentials = false;
-  request.open('GET', 'https://api.covidtracking.com/v1/states/current.json', true);
+  request.open('GET', 'https://cors-anywhere.herokuapp.com/https://api.covidtracking.com/v1/states/current.json', true);
 
   request.onload = function () {
     if (request.status === 200) {
