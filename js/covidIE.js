@@ -9,18 +9,18 @@ getGlobalTotals();
 function getStates(e) {
   var request = new XMLHttpRequest();
   request.withCredentials = false;
-  request.open('GET', 'https://cors-anywhere.herokuapp.com/https://api.covidtracking.com/v1/states/current.json', true);
+  request.open('GET', 'https://disease.sh/v3/covid-19/states?yesterday=true', true);
 
   request.onload = function () {
     if (request.status === 200) {
       var dataUSA = JSON.parse(request.responseText);
       window.console.log(dataUSA);
-      var time = new Date(Date.parse(dataUSA[21].dateModified));
-      document.getElementById("MA-updated").innerHTML = "Last Updated (for MA): " + time;
+      var time = new Date(dataUSA[0].updated);
+      document.getElementById("MA-updated").innerHTML = "Last Updated: " + time;
       var htmlStringUSA = '';
 
       for (var i = 0; i < dataUSA.length; i++) {
-        htmlStringUSA += "<tr><td class='row-name'>".concat(states[dataUSA[i].state], "</td>\n                                      <td>").concat(dataUSA[i].positiveIncrease.toLocaleString(), "</td>\n                                      <td>").concat(dataUSA[i].deathIncrease.toLocaleString(), "</td>\n                                      <td>").concat(dataUSA[i].positive.toLocaleString(), "</td>\n                                      <td>").concat(dataUSA[i].death.toLocaleString(), "</td>\n                                 </tr>");
+        htmlStringUSA += "<tr><td class='row-name'>".concat(dataUSA[i].state, "</td>\n                                      <td>").concat(dataUSA[i].todayCases.toLocaleString(), "</td>\n                                      <td>").concat(dataUSA[i].todayDeaths.toLocaleString(), "</td>\n                                      <td>").concat(dataUSA[i].cases.toLocaleString(), "</td>\n                                      <td>").concat(dataUSA[i].deaths.toLocaleString(), "</td>\n                                 </tr>");
       }
 
       displayUSA.insertAdjacentHTML("afterbegin", htmlStringUSA);

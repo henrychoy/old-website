@@ -12,7 +12,7 @@ getGlobalTotals();
 function getStates(e){
     let request = new XMLHttpRequest();
     request.withCredentials = false;
-    request.open('GET', 'https://cors-anywhere.herokuapp.com/https://api.covidtracking.com/v1/states/current.json', true);
+    request.open('GET', 'https://disease.sh/v3/covid-19/states?yesterday=true', true);
 
     request.onload = function () {
         if (request.status === 200) {
@@ -20,16 +20,16 @@ function getStates(e){
             window.console.log(dataUSA);
 
 
-            let time = new Date(Date.parse(dataUSA[21].dateModified));
-            document.getElementById("MA-updated").innerHTML = "Last Updated (for MA): " + time;
+            let time = new Date(dataUSA[0].updated);
+            document.getElementById("MA-updated").innerHTML = "Last Updated: " + time;
 
             let htmlStringUSA = '';
             for (let i=0; i < dataUSA.length; i++) {
-                htmlStringUSA += `<tr><td class='row-name'>${states[dataUSA[i].state]}</td>
-                                      <td>${dataUSA[i].positiveIncrease.toLocaleString()}</td>
-                                      <td>${dataUSA[i].deathIncrease.toLocaleString()}</td>
-                                      <td>${dataUSA[i].positive.toLocaleString()}</td>
-                                      <td>${dataUSA[i].death.toLocaleString()}</td>
+                htmlStringUSA += `<tr><td class='row-name'>${dataUSA[i].state}</td>
+                                      <td>${dataUSA[i].todayCases.toLocaleString()}</td>
+                                      <td>${dataUSA[i].todayDeaths.toLocaleString()}</td>
+                                      <td>${dataUSA[i].cases.toLocaleString()}</td>
+                                      <td>${dataUSA[i].deaths.toLocaleString()}</td>
                                  </tr>`;
                 }
 
